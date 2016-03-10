@@ -153,7 +153,7 @@ Bluemix DevOps Services はブラウザからコーディング、Gitへのプ�
  * 環境変数 VCAP_SERVICES を設定してください。  
 実行 → 実行構成、ターミナルの場合はset コマンド (Windows)
 
-            > $ set VCAP_SERVICES={    "cloudantNoSQLDB": [        {            "name": "Cloudant NoSQL DB-cc",            "label": "cloudantNoSQLDB",            "plan": "Shared",            "credentials": {                "username": "a1c0db7e-b540-4af4-afa8-08f8bd2b18c6-bluemix",                "password": "a5ecf586aad4605ff32ea807b2b329680441274154ae172a2c2391c37eda9726",                "host": "a1c0db7e-b540-4af4-afa8-08f8bd2b18c6-bluemix.cloudant.com",                "port": 443,                "url": "https://a1c0db7e-b540-4af4-afa8-08f8bd2b18c6-bluemix:a5ecf586aad4605ff32ea807b2b329680441274154ae172a2c2391c37eda9726@a1c0db7e-b540-4af4-afa8-08f8bd2b18c6-bluemix.cloudant.com"            }        }    ]}
+            > set VCAP_SERVICES={    "cloudantNoSQLDB": [        {            "name": "Cloudant NoSQL DB-cc",            "label": "cloudantNoSQLDB",            "plan": "Shared",            "credentials": {                "username": "a1c0db7e-b540-4af4-afa8-08f8bd2b18c6-bluemix",                "password": "a5ecf586aad4605ff32ea807b2b329680441274154ae172a2c2391c37eda9726",                "host": "a1c0db7e-b540-4af4-afa8-08f8bd2b18c6-bluemix.cloudant.com",                "port": 443,                "url": "https://a1c0db7e-b540-4af4-afa8-08f8bd2b18c6-bluemix:a5ecf586aad4605ff32ea807b2b329680441274154ae172a2c2391c37eda9726@a1c0db7e-b540-4af4-afa8-08f8bd2b18c6-bluemix.cloudant.com"            }        }    ]}
 
  * NPMインストールを実行してください。
 
