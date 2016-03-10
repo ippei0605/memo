@@ -3,7 +3,6 @@
 	"version": "1.0.0",
 	"description": "Memo (Node.js の Webアプリ)",
 	"private": true,
-	"directories":{"lib": "./lib"},
 	"scripts":
 	{
 		"start": "node app.js",
