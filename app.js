@@ -2,7 +2,6 @@
  * @file Memoアプリ
  * @author Ippei SUZUKI
  */
-'use strict';
 
 // モジュールを読込む。
 var context = require('./utils/context');
