@@ -82,12 +82,12 @@ http://www.ibm.com/developerworks/jp/cloud/library/j_cl-bluemix-nodejs-app/
 ## ルート (URLマッピング)
 |Action|Method|処理|
 |---|-----------|-----------|
-|/|GET|メモ一覧表示|
-|/memos|GET|メモの新規作成ダイアログを表示|
-|/memos/:_id/:_rev|GET|メモの更新ダイアログを表示|
-|/memos|POST|メモ新規登録、処理後 / にリダイレクト|
-|/memos/:_id/:_rev|POST|メモ更新、処理後 / にリダイレクト|
-|/memos/:_id/:_rev/delete|POST|メモ削除、処理後 / にリダイレクト|
+|/|GET|メモ一覧を表示する。|
+|/memos|GET|メモの新規作成ダイアログを表示する。|
+|/memos/:_id/:_rev|GET|メモの更新ダイアログを表示する。|
+|/memos|POST|メモを新規登録して、メモ一覧を表示する。|
+|/memos/:_id/:_rev|POST|メモを更新して、メモ一覧を表示する。|
+|/memos/:_id/:_rev/delete|POST|メモを削除して、メモ一覧を表示する。|
 
 
 ## オリジナルからの変更点
