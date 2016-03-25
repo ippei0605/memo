@@ -79,6 +79,17 @@ http://www.ibm.com/developerworks/jp/cloud/library/j_cl-bluemix-nodejs-app/
 ## モジュール関連図
 ![モジュール関連図](docs/figure.png)
 
+## ルート (URLマッピング)
+|Action|Method|処理|
+|---|-----------|-----------|
+|/|GET|メモ一覧表示|
+|/memos|GET|メモの新規作成ダイアログを表示|
+|/memos/:_id/:_rev|GET|メモの更新ダイアログを表示|
+|/memos|POST|メモ新規登録、処理後 / にリダイレクト|
+|/memos/:_id/:_rev|POST|メモ更新、処理後 / にリダイレクト|
+|/memos/:_id/:_rev/delete|POST|メモ削除、処理後 / にリダイレクト|
+
+
 ## オリジナルからの変更点
 * メモリとデータベース2通りのストア方式を紹介されていたが、データベースのみを対象
 * Cloudant NoSQL DB クライアントライブラリを Cradle から Cloudant Node.js Client に変更
@@ -90,12 +101,12 @@ http://www.ibm.com/developerworks/jp/cloud/library/j_cl-bluemix-nodejs-app/
 
 
 ## 開発方法
-Bluemix で動く Node.js アプリのデプロイには次の2通りの方法があります。
-* CFコマンド
+Node.js アプリを Bluemix 上で動作させるためには、次の2通りのデプロイ方法があります。
+* CF コマンド
 * Bluemix DevOps Services
 
-CFコマンドはOSのターミナル (コマンドプロンプト) から実行するコマンドで、プログラミングしたアプリをBluemix にデプロイするなど、ローカル環境からBluemix を操作するために使用します。  
-Bluemix DevOps Services はブラウザからコーディング、Gitへのプッシュ、ビルド＆デプロイができるクラウドサービスです。ローカルに開発環境を準備する必要が無い反面、テストしながら実験的に開発していくような場合には向いていません。Gitへのプッシュ、Bluemixへのデプロイをせずとも、ローカルに実行環境があれば、次のコマンドで実行・テストできるからです。
+CF コマンドは OS のターミナル (コマンドプロンプト) から実行するコマンドで、プログラミングしたアプリを Bluemix にデプロイするなど、ローカル環境から Bluemix を操作するために使用します。  
+Bluemix DevOps Services はブラウザからコーディング、Git へのプッシュ、ビルド＆デプロイができるクラウドサービスです。ローカルに開発環境を準備する必要が無い反面、テストしながら実験的に開発していくような場合には向いていません。Git へのプッシュ、Bluemix へのデプロイをせずとも、ローカルに実行環境があれば、次のコマンドで実行・テストできるからです。
 
     > node app
 
